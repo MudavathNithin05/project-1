@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ordered Image Grid</title>
+  <style>
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 columns */
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      padding: 10px;
+      background-color: #f9f9f9;
+    }
+
+    .photo {
+      width: 200px;
+      max-height: 100px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    .caption {
+      margin-top: 10px;
+      font-size: 1rem;
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="gallery">
+    <div class="item">
+      <img class="photo" src="ac.jpeg" alt="AC"><h4>Godrej</h4><br>Price:350000/-
+    </div>
+    <div class="item">
+      <img class="photo" src="Watch.jpeg" alt="Classic Watch"><h4>Classic Watch</h4><br>Price:3500/-
+    </div>
+    <div class="item">
+      <img class="photo" src="Oven.jpeg" alt="oven"><h4>oven</h4><br>Price:10000/-
+    </div>
+  </div>
+</body>
+</html>
